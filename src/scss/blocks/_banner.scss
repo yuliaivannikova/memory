@@ -1,0 +1,83 @@
+.banner {
+    // background-image: url(../img/bg.png);
+    // background-position: top center;
+    // background-size: cover;
+
+    &__bg {
+        padding-top: 38px;
+        // background-color: rgba(18, 18, 18, 0.6);
+    }
+
+    &__button {
+        width: 136px;
+        height: 30px;
+        margin-left: 20px;
+
+
+        background-color: transparent;
+        border: 1px solid #5F82FF;
+        border-radius: 6px;
+
+
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        color: #5F82FF;
+
+        &--calc {
+            width: 310px;
+            height: 60px;
+            margin-bottom: 142px;
+            margin-left: 0;
+            background: linear-gradient(0deg, #5F82FF 0%, #8B55E4 100%);
+            border-radius: 6px;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+
+        }
+    }
+
+    &__contact {
+        padding-top: 5px;
+
+    }
+
+    &__title {
+        padding-top: 119px;
+    }
+
+    &__subtitle {
+        padding-top: 41px;
+        text-align: center;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.03em;
+        padding-bottom: 20px;
+
+    }
+
+    &__desc {
+        text-align: center;
+        display: block;
+        padding-bottom: 36px;
+    }
+
+    &__caption {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        padding-top: 20px;
+
+    }
+
+    &__icon {
+        padding: 30px 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 50px 0;
+    }
+
+
+}

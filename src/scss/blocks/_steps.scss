@@ -1,0 +1,78 @@
+.steps {
+    padding-top: 94px;
+    padding-bottom: 112px;
+
+    &__subtitle {
+        font-family: 'Cormorant Infant', serif;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 0.02em;
+        color: #999999;
+        padding-bottom: 20px;
+
+    }
+
+    &__caption {
+        font-family: 'Cormorant Infant', serif;
+        font-weight: bold;
+        padding-bottom: 41px;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 0.02em;
+        color: #000000;
+    }
+
+    &__title {
+        padding-bottom: 100px;
+    }
+
+    &__text {
+        border-left: 2px solid #5F82FF;
+        margin-bottom: 30px;
+        font-size: 15px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        color: #444444;
+        padding-left: 20px;
+
+    }
+
+    &__vector {
+        position: absolute;
+        top: -150%;
+        left: 35%;
+
+    }
+
+    &__img {
+        position: relative;
+
+    }
+
+    &__link {
+        font-size: 15px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        color: #5F82FF;
+        border: 1px solid #5F82FF;
+        box-sizing: border-box;
+        border-radius: 6px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+
+    &__button {
+        margin-top: 51px;
+
+        &--first {
+            margin-top: 77px;
+
+        }
+    }
+
+
+}

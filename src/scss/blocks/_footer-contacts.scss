@@ -1,0 +1,64 @@
+.footer-contacts {
+    // background-color: #C4C4C4;
+    padding-top: 151px;
+
+    &__title {
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    &__subtitle {
+        color: #444444;
+
+    }
+
+    &__icon {
+        padding-top: 38px;
+
+        &--tel {
+            padding-top: 31px;
+            padding-bottom: 27px;
+        }
+    }
+
+    &__desc {
+
+        font-size: 18px;
+        line-height: 26px;
+        color: #000000;
+
+    }
+
+    &__text {
+        padding-left: 31px;
+        padding-top: 2px;
+
+
+    }
+
+    &__info {
+        color: #C4C4C4;
+    }
+
+    &__link {
+        color: #5F82FF;
+
+    }
+
+    &__button {
+        width: 328px;
+        height: 50px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        background: linear-gradient(0deg, #5F82FF 0%, #8B55E4 100%);
+        border-radius: 6px;
+        border: none;
+    }
+
+    &__container {
+        padding-bottom: 100px;
+    }
+}

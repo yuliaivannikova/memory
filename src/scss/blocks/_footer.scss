@@ -1,0 +1,21 @@
+.footer {
+    &__nav {
+        padding-top: 78px;
+    }
+
+    &__design-text {
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        padding-bottom: 7px;
+    }
+
+    &__copyright {
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.02em;
+        color: #999999;
+        padding-top: 26px;
+        padding-bottom: 30px;
+    }
+}

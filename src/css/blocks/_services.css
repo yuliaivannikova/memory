@@ -1,0 +1,39 @@
+.services {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .services__title {
+    padding: 0 45px;
+    padding-bottom: 81px; }
+  .services__text {
+    letter-spacing: 0.02em;
+    color: #444444; }
+  .services__icon {
+    padding-right: 20px;
+    font-family: 'Cormorant Infant', serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: #C4C4C4; }
+  .services__plates {
+    padding-bottom: 30px; }
+  .services__subtitle {
+    font-family: 'Cormorant Infant', serif;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+    padding-right: 95px;
+    padding-left: 5px; }
+  .services__button {
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: #5F82FF;
+    width: 215px;
+    height: 50px;
+    border: 1px solid #5F82FF;
+    border-radius: 6px;
+    background-color: transparent; }
+  .services__form {
+    margin-top: 10px; }

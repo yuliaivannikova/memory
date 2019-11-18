@@ -1,262 +1,912 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="info">
-        <div class="container">
-          <div class="row">
-            <div class="col-8"></div>
-            <div class="col-4"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/slick-theme.css">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="info">
+      <div class="container">
+        <div class="row info__wrapper d-flex">
+          <div class="col-3">
+            <div class="info__plate d-flex">
+              <i class="fas fa-map-marker-alt info__marker"></i>
+              <p class="info__text">
+                <span class="info__text info__text--value">Выберите город:
+                </span>
+                Мoсква<a href="#" class="info__link">изменить</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-6 d-flex">
+            <div class="info__plate">
+              <p class="info__text">
+                <span class="info__text info__text--value">Режим работы:</span>
+                09:00 - 20:00
+              </p>
+            </div>
+            <div class="info__plate">
+              <a href="#" class="info__text">О компании</a>
+            </div>
+            <div class="info__plate">
+              <a href="#" class="info__text">Фото</a>
+            </div>
+            <div class="info__plate">
+              <a href="#" class="info__text">Контакты</a>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-end">
+            <div class="info__plate info__plate--link">
+              <p class="info__text "><a href="mailto:info@mkv.ru" class="info__plate--link">Email: info@mkv.ru</a></p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="banner">
+    </div>
+    <div class="banner">
+      <div class="banner__bg">
         <div class="banner__head">
           <div class="container">
-            <div class="row">
-              <div class="banner__logo"></div>
-              <div class="banner__nav"></div>
-              <div class="banner__contact"></div>
+            <div class="banner__logo logo">
+              <div class="row">
+                <div class="col-8 d-flex">
+                  <div class="logo__icon d-flex">
+                    <a href="#"><img src="./img/img1.png" alt="лого" /></a>
+                    <div>
+                      <div class="logo__text"><a href="#">Мемориальная компания</a></div>
+                      <div class="logo__title"><a href="#">Возрождение</a></div>
+                    </div>
+                  </div>
+                  <div class="banner__nav  nav d-flex">
+                    <div class="nav__burger d-lg-none">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <ul class="nav__list list d-flex ">
+                      <li class="nav__item ">
+                        <a href="#" class="nav__link nav__link">Памятники</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="#" class="nav__link">Ограды</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="#" class="nav__link">Цветники</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="#" class="nav__link">Цоколя</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-4 ">
+                  <div class="banner__contact d-flex justify-content-end">
+                    <a href="tel:74993676027" class="tel__link">
+                      <span class="tel__link tel__link--activ"> +7 (499)</span>
+                      367-60-27</a>
+                    <form action="#">
+                      <button class="banner__button">Заказать звонок</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="banner__text">
           <div class="container">
-            <h1 class="banner__title"></h1>
-            <h2 class="banner__subtitle"></h2>
-            <p class="banner__desc"></p>
-            <div class="banner__button"></div>
+            <h1 class="banner__title title">МЕМОРИАЛЬНАЯ <br> КОМПАНИЯ ВОЗРОЖДЕНИЕ</h1>
+            <h2 class="banner__subtitle">Памятники из гранита и мрамора</h2>
+            <p class="banner__desc">
+              Имеем полный комплект документов и разрешений на установку
+              памятников на всех
+              <br> кладбищах Москвы и Московской области.
+            </p>
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <form action="#">
+                  <button class="banner__button banner__button--calc"> Узнать стоимость</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
         <div class="banner__icon">
           <div class="container">
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <article>
-        <section class="content">
-          <div class="container">
-            <h2 class="content__title"></h2>
-            <p class="content__text"></p>
-          </div>
-        </section>
-        <section class="information">
-          <div class="design">
-            <div class="container">
-              <div class="row">
-                <div class="col-6">
-                  <h2 class="design__title"></h2>
-                  <p class="design__text"></p>
-                  <div class="design__button"></div>
+            <div class="row">
+              <div class="col-3 d-flex flex-column align-items-center ">
+                <img src="./img/icons/icon1.png" alt="icon1" />
+                <div>
+                  <p class="banner__caption">
+                    Изготовление</p>
                 </div>
-                <div class="col-6">
-                  <div class="design__img"></div>
+              </div>
+              <div class="col-3 d-flex flex-column align-items-center">
+                <img src="./img/icons/icon2.png" alt="icon2" />
+                <div>
+                  <p class="banner__caption">Доставка
+                  </p>
+                </div>
+              </div>
+              <div class="col-3 d-flex flex-column align-items-center">
+                <img src="./img/icons/icon3.png" alt="icon3" />
+                <div>
+                  <p class="banner__caption">Установка
+                  </p>
+                </div>
+              </div>
+              <div class="col-3 d-flex flex-column align-items-center">
+                <img src="./img/icons/icon4.png" alt="icon4" />
+                <div>
+                  <p class="banner__caption">Документация
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="services">
-            <div class="container">
-              <div class="services__title"></div>
-              <div class="col-6">
-                <div class="services__plates">
-                  <div class="services__icon"></div>
-                  <p class="services__text"></p>
-                </div>
-                <div class="services__plates">
-                  <div class="services__icon"></div>
-                  <p class="services__text"></p>
-                </div>
-                <div class="services__plates">
-                  <div class="services__icon"></div>
-                  <p class="services__text"></p>
-                </div>
-                <div class="services__plates">
-                  <div class="services__icon"></div>
-                  <p class="services__text"></p>
-                </div>
-                <div class="services__plates">
-                  <div class="services__icon"></div>
-                  <p class="services__text"></p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <article>
+      <section class="content">
+        <div class="container">
+          <h2 class="content__title title">Каталог памятников</h2>
+          <div class="row">
+            <div class="offset-3 col-6">
+              <p class="content__text">
+                Самый широкий ассортимент, по доступным ценам. В каталоге
+                представлено 100+ моделей памятников.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <ul class="nav__tabs d-flex align-items-center ">
+                <li class=" nav__tabs-item"><a class="nav__tabs-link active" href="#page1"
+                    data-toggle="tab">Памятники</a></li>
+                <li class="nav__tabs-item"><a class="nav__tabs-link" href="#page2" data-toggle="tab">Ограды</a></li>
+                <li class="nav__tabs-item"><a class="nav__tabs-link" href="#page3" data-toggle="tab">Цветники</a>
+                </li>
+                <li class="nav__tabs-item"><a class="nav__tabs-link" href="#page4" data-toggle="tab">Цоколя</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center ">
+              <ul class="nav__filtr  d-flex align-items-center">
+                <li class=" nav__filtr-item"><a class="nav__filtr-link " href="#" data-toggle="tab">Одинарные</a>
+                </li>
+                <li class="nav__filtr-item"><a class="nav__filtr-link" href="#" data-toggle="tab">Двойные
+                    (горизонты)</a>
+                </li>
+                <li class="nav__filtr-item"><a class="nav__filtr-link" href="#" data-toggle="tab">С крестом</a>
+                </li>
+                <li class="nav__filtr-item"><a class="nav__filtr-link" href="#" data-toggle="tab">Фигурные</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Памятники, ограды, цветники, цоколя -->
+
+          <div class="container content__tab active" id="page1" data-toggle="tab">
+            <div class="row">
+              <div class="col-3 content__col">
+                <div class="content__plate"><img src="./img/img5.png" alt="img">
+                  <form action="">
+                    <p class="content__name">Наименование для карточки</p>
+                    <select class="content__select" name="" id="">
+                      <option>- Выбор материала</option>
+                    </select>
+                    <p class="content__price">Стоимость: 5 990₽</p>
+                    <button class="content__button">Заказать работу</button>
+                  </form>
                 </div>
               </div>
+              <div class="col-3 content__col">
+                <div class="content__plate"><img src="./img/img6.png" alt="img">
+                  <form action="">
+                    <p class="content__name">Наименование для карточки</p>
+                    <select class="content__select" name="" id="">
+                      <option>- Выбор материала</option>
+                    </select>
+                    <p class="content__price">Стоимость: 5 990₽</p>
+                    <button class="content__button">Заказать работу</button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-3 content__col">
+                <div class="content__plate"><img src="./img/img7.png" alt="img">
+                  <form action="">
+                    <p class="content__name">Наименование для карточки</p>
+                    <select class="content__select" name="" id="">
+                      <option>- Выбор материала</option>
+                    </select>
+                    <p class="content__price">Стоимость: 5 990₽</p>
+                    <button class="content__button">Заказать работу</button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-3 content__col">
+                <div class="content__plate"><img src="./img/img8.png" alt="img">
+                  <form action="">
+                    <p class="content__name">Наименование для карточки</p>
+                    <select class="content__select" name="" id="">
+                      <option>- Выбор материала</option>
+                    </select>
+                    <p class="content__price">Стоимость: 5 990₽</p>
+                    <button class="content__button">Заказать работу</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3 content__col">
+                <div class="content__plate"><img src="./img/img5.png" alt="img">
+                  <form action="">
+                    <p class="content__name">Наименование для карточки</p>
+                    <select class="content__select" name="" id="">
+                      <option>- Выбор материала</option>
+                    </select>
+                    <p class="content__price">Стоимость: 5 990₽</p>
+                    <button class="content__button">Заказать работу</button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-3 content__col">
+                <div class="content__plate"><img src="./img/img6.png" alt="img">
+                  <form action="">
+                    <p class="content__name">Наименование для карточки</p>
+                    <select class="content__select" name="" id="">
+                      <option>- Выбор материала</option>
+                    </select>
+                    <p class="content__price">Стоимость: 5 990₽</p>
+                    <button class="content__button">Заказать работу</button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-3 content__col">
+                <div class="content__plate"><img src="./img/img7.png" alt="img">
+                  <form action="">
+                    <p class="content__name">Наименование для карточки</p>
+                    <select class="content__select" name="" id="">
+                      <option>- Выбор материала</option>
+                    </select>
+                    <p class="content__price">Стоимость: 5 990₽</p>
+                    <button class="content__button">Заказать работу</button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-3 content__col">
+                <div class="content__plate"><img src="./img/img8.png" alt="img">
+                  <form action="">
+                    <p class="content__name">Наименование для карточки</p>
+                    <select class="content__select" name="" id="">
+                      <option>- Выбор материала</option>
+                    </select>
+                    <p class="content__price">Стоимость: 5 990₽</p>
+                    <button class="content__button">Заказать работу</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 d-flex flex-column align-items-center">
+              <p class="content__desc">И еще 140 позиций</p>
+              <div class="content__button-more d-flex justify-content-center align-items-center"><a href="#"
+                  class="content__button-link">Перейти в каталог</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="information">
+        <div class="design">
+          <div class="container">
+            <div class="row design__hr">
               <div class="col-6">
-                <div class="services__subtitle"></div>
+                <h2 class="design__title title">
+                  Гранитный комплекс
+                  <br> по дизайн-проекту
+                </h2>
+                <p class="design__text">
+                  Предлагаем вам решение под ключ, наш дизайнер подготовит
+                  эскиз и 3D проект вашего комплекса. В комплекс входит:
+                  памятник, ландшафтный дизайн, кованная ограда, скамейка /
+                  столик, оформление
+                </p>
+                <form action="#">
+                  <button class="design__button">Выбрать комплекс</button>
+                </form>
+              </div>
+              <div class="col-6">
+                <div class="design__img">
+                  <img src="./img/img2.png" alt="Памятники дизайн" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services">
+          <div class="container">
+            <div class="row">
+              <div class="offset-3 col-6">
+                <div class="services__title title">
+                  Благоустройство могил под ключ под ваш бюджет
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="services__plates d-flex justify-content-between">
+                  <div class="services__icon ">О1.</div>
+                  <p class="services__text">
+                    Комплекс услуг: изготовление памятников из гранита,
+                    подставок, цветников, оград, цоколей, мемориальные
+                    комплексы, благоустройство под ключ
+                  </p>
+                </div>
+                <div class="services__plates d-flex justify-content-between">
+                  <div class="services__icon ">О2.</div>
+                  <p class="services__text">
+                    Одна из самых низких цен: собственное производство в Китае и
+                    прямые контракты с поставщиками из Карелии, Индии и Европы
+                  </p>
+                </div>
+                <div class="services__plates d-flex justify-content-between">
+                  <div class="services__icon ">О3.</div>
+                  <p class="services__text">
+                    Сервис моделирования памятников: Только мы предлагаем услугу
+                    самостоятельного моделирования памятника, не выходя из дома
+                  </p>
+                </div>
+                <div class="services__plates d-flex justify-content-between">
+                  <div class="services__icon ">О4.</div>
+                  <p class="services__text">
+                    Установка на всех кладбищах Москвы: Мы предоставляем полный
+                    пакет документов для установки.
+                  </p>
+                </div>
+                <div class="services__plates d-flex justify-content-between">
+                  <div class="services__icon ">О5.</div>
+                  <p class="services__text">
+                    50 лет гарантии: Гарантия на памятники из гранита составляет
+                    50 лет с момента установки изделий и подписания акта
+                    приема-передачи.
+                  </p>
+                </div>
+                <form action="#" class="services__form">
+                  <button class="services__button">Узнать подробнее</button>
+                </form>
+              </div>
+              <div class="col-6">
+                <div class="services__subtitle">
+                  Видео о нашей гранитной мастерской
+                </div>
                 <div class="services__video"></div>
               </div>
             </div>
           </div>
-        </section>
-        <section class="gallery">
-          <div class="container-fluid">
-            <div class="gallery__slider"></div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="container-fluid">
+          <div class="gallery__slider">
+            <img src="./img/img3.png" alt="img" class="gallery__img" />
+            <img src="./img/img3.png" alt="img" class="gallery__img" />
+            <img src="./img/img3.png" alt="img" class="gallery__img" />
+            <img src="./img/img3.png" alt="img" class="gallery__img" />
+            <img src="./img/img3.png" alt="img" class="gallery__img" />
+            <img src="./img/img3.png" alt="img" class="gallery__img" />
+            <img src="./img/img3.png" alt="img" class="gallery__img" />
+            <img src="./img/img3.png" alt="img" class="gallery__img" />
           </div>
+        </div>
+        <div class="gallery__wrap">
           <div class="container">
             <div class="row">
-              <div class="coll-8">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-4">
-                      <gallery__icons></gallery__icons>
-                      <p class="gallery__subtitle"></p>
-                      <p class="gallery__text"></p>
-                    </div>
-                    <div class="col-4">
-                      <gallery__icons></gallery__icons>
-                      <p class="gallery__subtitle"></p>
-                      <p class="gallery__text"></p>
-                    </div>
-                    <div class="col-4">
-                      <gallery__icons></gallery__icons>
-                      <p class="gallery__subtitle"></p>
-                      <p class="gallery__text"></p>
-                    </div>
-                  </div>
+              <div class="col-2 d-flex">
+                <div class="gallery__icon">
+                  <img src="./img/icons/icon5.png" alt="icon5" />
+                </div>
+                <div class="gallery__plate d-flex align-items-center">
+                  <p class="gallery__subtitle">Модель:</p>
+                  <p class="gallery__text">K-01</p>
                 </div>
               </div>
-              <div class="col-4">
-                <div class="gallery__button"></div>
+              <div class="col-6 d-flex ">
+                <div class="gallery__icon gallery__icon--second">
+                  <img src="./img/icons/icon6.png" alt="icon6" />
+                </div>
+                <div class="gallery__plate d-flex align-items-center">
+                  <p class="gallery__subtitle">Материал:</p>
+                  <p class="gallery__text">Гранит</p>
+                </div>
+                <div class="gallery__icon">
+                  <img src="./img/icons/icon7.png" alt="icon7" class="gallery__icon gallery__icon--thid" />
+                </div>
+                <div class="gallery__plate d-flex align-items-center">
+                  <p class="gallery__subtitle">Кладбище:</p>
+                  <p class="gallery__text">Ваганьковское</p>
+                </div>
+              </div>
+              <div class="col-4 d-flex justify-content-end">
+                <div class="gallery__button"><a href="#" class="gallery__link">Смотреть все</a></div>
               </div>
             </div>
           </div>
-        </section>
-        <section class="steps">
-          <div class="container">
-            <h2 class="steps_title"></h2>
-            <h2 class="steps_title"></h2>
-            <div class="row">
-              <div class="col-4">
-                <h3 class="steps_subtitle"></h3>
-                <h3 class="steps__caption"></h3>
-                <h3 class="steps__plate">
-                  <p class="steps__text"></p>
-                  <p class="steps__text"></p>
-                  <p class="steps__text"></p>
-                  <p class="steps__text"></p>
-                </h3>
-                <form action=""><button class="steps__button"></button></form>
-              </div>
-              <div class="col-4">
-                <h3 class="steps_subtitle"></h3>
-                <h3 class="steps__caption"></h3>
-                <h3 class="steps__plate">
-                  <p class="steps__text"></p>
-                  <p class="steps__text"></p>
-                  <p class="steps__text"></p>
-                  <p class="steps__text"></p>
-                </h3>
-                <form action=""><button class="steps__button"></button></form>
-              </div>
-              <div class="col-4">
-                <h3 class="steps_subtitle"></h3>
-                <h3 class="steps__caption"></h3>
-                <h3 class="steps__plate">
-                  <p class="steps__text"></p>
-                  <p class="steps__text"></p>
-                  <p class="steps__text"></p>
-                  <p class="steps__text"></p>
-                </h3>
-                <form action=""><button class="steps__button"></button></form>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="faq">
-          <div class="container">
-            <h2 class="faq__title"></h2>
-            <div class="row">
-              <div class="col-6">
-                <div class="faq__plate"></div>
-                <div class="faq__plate"></div>
-                <div class="faq__plate"></div>
-                <div class="faq__plate"></div>
-              </div>
-              <div class="col-6">
-                <div class="faq__plate"></div>
-                <div class="faq__plate"></div>
-                <div class="faq__plate"></div>
-                <div class="faq__plate"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="contacts">
-          <div class="container">
-            <h2 class="contacts__title"></h2>
-            <p class="contacts__text"></p>
-            <div class="row">
-              <div class="col-6">
-                <input type="text" class="contacts__input" />
-              </div>
-              <div class="col-6">
-                <input type="text" class="contacts__input" />
-              </div>
-            </div>
-            <form action=""><input type="text" /><input type="text" /></form>
-          </div>
-        </section>
-        <section class="about">
-          <div class="container">
-            <h2 class="about__title"></h2>
-            <row>
-              <div class="col-3"><h2 class="about__subtitle"></h2></div>
-              <div class="col-9"><p class="about__text"></p></div>
-            </row>
-            <div class="row">
-              <div class="col-3"><h2 class="about__subtitle"></h2></div>
-              <div class="col-3"><div class="about__icon"></div></div>
-              <div class="col-3"><div class="about__icon"></div></div>
-              <div class="col-3"><div class="about__icon"></div></div>
-            </div>
-            <div class="row">
-              <div class="col-3"><h2 class="about__subtitle"></h2></div>
-              <div class="col-3"><div class="about__icon"></div></div>
-              <div class="col-3"><div class="about__icon"></div></div>
-              <div class="col-3"><div class="about__icon"></div></div>
-            </div>
-          </div>
-        </section>
-      </article>
-    </main>
-    <footer>
-      <div class="footer-contacts">
+        </div>
+      </section>
+      <section class="steps">
         <div class="container">
+          <h2 class="steps_title title">Как мы работаем?</h2>
+          <h2 class="steps__title title">Этапы изготовления памятника</h2>
           <div class="row">
             <div class="col-4">
-              <h2 class="footer-contacts__title"></h2>
-              <p class="footer-contacts__text"></p>
-              <div class="footer-contacts__icon"></div>
-              <form action="">
-                <button class="footer-contacts__button"></button>
-              </form>
+              <div class="steps__img d-flex">
+                <h3 class="steps__subtitle">Этап 1.</h3>
+                <img src="./img/icons/Vector 1.png" alt="vector" class="steps__vector">
+              </div>
+              <h3 class="steps__caption">Получите 3D - модель памятника</h3>
+              <div class="steps__plate">
+                <p class="steps__text">
+                  Изобразим памятник в масштабе 1:1 и дадим рекомендации по
+                  улучшению внешнего вида
+                </p>
+                <p class="steps__text">
+                  Согласуем оформление и размещение всех элементов на камне
+                </p>
+                <p class="steps__text">
+                  Предложим варианты благоустройства могилы
+                </p>
+                <p class="steps__text">Зафиксируем цены и сроки в договоре</p>
+              </div>
+              <div class="steps__button steps__button--first"><a href="#" class="steps__link">Получить 3D-модель</a>
+              </div>
+
             </div>
-            <div class="col-8"></div>
+            <div class="col-4">
+              <h3 class="steps__subtitle">Этап 2.</h3>
+
+              <h3 class="steps__caption">Изготовим памятник
+                <br> за 14 дней</h3>
+              <div class="steps__plate">
+                <p class="steps__text">
+                  Ручная зеркальная полировка всех сторон памятника
+                </p>
+                <p class="steps__text">
+                  Вырезка форм скульпторами с опытом 15 лет
+                </p>
+                <p class="steps__text">
+                  Глубокая пробивка гранита на сверхточных граверных станках
+                </p>
+                <p class="steps__text">
+                  Фото и видео отчет на каждом этапе изготовления
+                </p>
+              </div>
+
+              <div class="steps__button"><a href="#" class="steps__link">Примеры фото отчета</a></div>
+
+            </div>
+            <div class="col-4">
+              <h3 class="steps__subtitle">Этап 3.</h3>
+              <h3 class="steps__caption">
+                Установка на любом кладбище за 1 день
+              </h3>
+              <div class="steps__plate">
+                <p class="steps__text">Опыт работы бригады - 14 лет</p>
+                <p class="steps__text">
+                  Гарантия на монтажные работы - 5 лет по договору
+                </p>
+                <p class="steps__text">
+                  Весь пакет документов для кладбища: сертификаты, лицензии и
+                  БО-13
+                </p>
+                <p class="steps__text">
+                  Официальное разрешение от ГБУ "Ритуал" на монтаж
+                </p>
+              </div>
+              <div class="steps__button"><a href="#" class="steps__link">Заказать выезд специалиста бесплатно</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="container">
+          <h2 class="faq__title title">Часто задаваемые вопросы</h2>
+          <div class="row">
+            <div class="col-6 faq__col">
+              <div class="faq__item">
+                <div class="faq__plate d-flex justify-content-between">
+                  <div class="faq__ask">Вы работаете без предоплаты?</div>
+                  <div class="faq__icon">
+                    <div class="faq__plus">+</div>
+                    <div class="faq__minus">-</div>
+                  </div>
+                </div>
+                <div class="faq__answer"></div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__plate d-flex justify-content-between">
+                  <div class="faq__ask">
+                    Как и когда следует заказывать памятник?
+                  </div>
+                  <div class="faq__icon">
+                    <div class="faq__plus">+</div>
+                    <div class="faq__minus">-</div>
+                  </div>
+                </div>
+                <div class="faq__answer"></div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__plate d-flex justify-content-between">
+                  <div class="faq__ask">
+                    Если я не смогу присутствовать при установке?
+                  </div>
+                  <div class="faq__icon">
+                    <div class="faq__plus">+</div>
+                    <div class="faq__minus">-</div>
+                  </div>
+                </div>
+                <div class="faq__answer"></div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__plate d-flex justify-content-between">
+                  <div class="faq__ask"> Руководство кладбища препятствует установке памятника,
+                    мотивируя свои действия тем, что все работы должны делать они
+                    (сам памятник, его установку).</div>
+                  <div class="faq__icon">
+                    <div class="faq__plus">+</div>
+                    <div class="faq__minus">-</div>
+                  </div>
+                </div>
+                <div class="faq__answer"></div>
+              </div>
+            </div>
+            <div class="col-6 faq__col faq__col--right">
+              <div class="faq__item">
+                <div class="faq__plate d-flex justify-content-between">
+                  <div class="faq__ask">Семьям погибших военнослужащих полагается компенсация стоимости памятника от
+                    военкомата. Как её можно получить?</div>
+                  <div class="faq__icon">
+                    <div class="faq__plus">+</div>
+                    <div class="faq__minus">-</div>
+                  </div>
+                </div>
+                <div class="faq__answer"></div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__plate d-flex justify-content-between">
+                  <div class="faq__ask">
+                    Как ухаживать за натуральным камнем?
+                  </div>
+                  <div class="faq__icon">
+                    <div class="faq__plus">+</div>
+                    <div class="faq__minus">-</div>
+                  </div>
+                </div>
+                <div class="faq__answer"></div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__plate d-flex justify-content-between">
+                  <div class="faq__ask">
+                    Что такое эпитафия и зачем она нужна?
+                  </div>
+                  <div class="faq__icon">
+                    <div class="faq__plus">+</div>
+                    <div class="faq__minus">-</div>
+                  </div>
+                </div>
+                <div class="faq__answer"></div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__plate d-flex justify-content-between">
+                  <div class="faq__ask"> Производите ли вы установки памятников в Московской области? Например г.Видное.
+                  </div>
+                  <div class="faq__icon">
+                    <div class="faq__plus">+</div>
+                    <div class="faq__minus">-</div>
+                  </div>
+                </div>
+                <div class="faq__answer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__bg">
+          <div class="container">
+            <h2 class="contacts__title title">
+              Если у вас остались вопросы,
+              <br>
+              мы будем рады ответить на них
+            </h2>
+            <p class="contacts__text">
+              Оставьте ваше имя и телефон, и наш менеджер
+              <br>
+              свяжется с вами в
+              течении 5 минут.
+            </p>
+            <form action="#" method="get">
+              <div class="row">
+                <div class="offset-1 col-5">
+                  <div class="contacts-field">
+                    <label class="contacts__label" for="name">Ваше имя</label>
+                    <input id="name" required type="text" placeholder="Иван Иванович" class="contacts__input"
+                      name="Name">
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="contacts-field">
+                    <label class="contacts__label" for="phone">Телефон</label>
+                    <input id="phone" required type="text" placeholder="+7 900 987-65-44" data-mask="+7 000-000-00-00"
+                      class="contacts__input" name="tel" minlength="16">
+                  </div>
+                </div>
+                <div class="col-12 d-flex flex-column align-items-center">
+                  <div class="contacts-field contacts-field--checkbox d-flex flex-wrap justify-content-center ">
+                    <input id="checkbox" required type="checkbox" placeholder="Auskteez Tran"
+                      class="contacts__checkbox contacts__checkbox--cheked" name="Name">
+                    <label for="checkbox" class="contacts__check">Я даю согласие на обратку персональных данных</label>
+                  </div>
+                  <button class="contacts__button contacts__button--active">Отправить запрос</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container-fluid about__frame">
+          <div class="container">
+            <h2 class="about__title title">О компании</h2>
+            <div class="row">
+              <div class="col-3">
+                <h2 class="about__subtitle about__subtitle--one">Пару слов о нашей компании</h2>
+              </div>
+              <div class="col-9">
+                <p class="about__text">
+                  Описание - Компания «Глобал Стоун» осуществляет изготовление
+                  мемориальных памятников под заказ. Мы занимаемся созданием
+                  монументов и комплексов как стандартных, так и индивидуально
+                  разработанных форм, в том числе дизайнерских надгробий.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid  about__frame ">
+          <div class="container">
+            <div class="row">
+              <div class="col-3">
+                <h2 class="about__subtitle about__subtitle--two">Что мы изготавливаем</h2>
+              </div>
+              <div class="col-3 about__plate">
+                <div class="about__icon">
+                  <img src="./img/icons/icon8.png" class="about__img" alt="icon" />
+                  <p class="about__desc">Памятники</p>
+                </div>
+                <div class="about__icon">
+                  <img src="./img/icons/icon9.png" class="about__img" alt="icon" />
+                  <p class="about__desc">Цоколя</p>
+                </div>
+                <div class="about__icon">
+                  <img src="./img/icons/icon10.png" class="about__img" alt="icon" />
+                  <p class="about__desc">Плитка, <br> мраморная <br> крошка</p>
+                </div>
+              </div>
+              <div class="col-3 about__plate">
+                <div class="about__icon">
+                  <img src="./img/icons/icon11.png" class="about__img" alt="icon" />
+                  <p class="about__desc">Цветники</p>
+                </div>
+                <div class="about__icon">
+                  <img src="./img/icons/icon12.png" class="about__img" alt="icon" />
+                  <p class="about__desc">Кресты</p>
+                </div>
+                <div class="about__icon">
+                  <img src="./img/icons/icon13.png" class="about__img" alt="icon" />
+                  <p class="about__desc">Скульптуры</p>
+                </div>
+              </div>
+              <div class="col-3 about__plate">
+                <div class="about__icon">
+                  <img src="./img/icons/icon14.png" class="about__img" alt="icon" />
+                  <p class="about__desc">Ограды</p>
+                </div>
+                <div class="about__icon">
+                  <img src="./img/icons/icon15.png" class="about__img" alt="icon" />
+                  <p class="about__desc">Столы, лавки</p>
+                </div>
+                <div class="about__icon">
+                  <img src="./img/icons/icon16.png" class="about__img" alt="icon" />
+                  <p class="about__desc">Мемориальные <br> комплексы</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="container">
           <div class="row">
-            <div class="footer__logo"></div>
-            <div class="footer__nav"></div>
-            <div class="footer__design"></div>
+            <div class="col-3">
+              <h2 class="about__subtitle about__subtitle--three">
+                Полный комплекс услуг в одном месте
+              </h2>
+            </div>
+            <div class="col-3">
+              <div class="about__point">
+                <p class="about__icon-text">O1.</p>
+                <p class="about__services">
+                  Изготовление памятников и доп. изделий
+                </p>
+              </div>
+              <div class="about__point">
+                <p class="about__icon-text">O4.</p>
+                <p class="about__services">Хранение на наших складах</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="about__point">
+                <p class="about__icon-text">O2.</p>
+                <p class="about__services">
+                  Доставка по Москве и Московской области
+                </p>
+              </div>
+              <div class="about__point about__point--five">
+                <p class="about__icon-text ">O5.</p>
+                <p class="about__services">
+                  Полный пакет документов для компенсаций
+                </p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="about__point">
+                <p class="about__icon-text">O3.</p>
+                <p class="about__services">
+                  Установка на всех кладбищах Москвы и Московской области
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="footer__copyright"><p></p></div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <div class="footer-contacts">
+      <div class="container footer-contacts__container">
+        <div class="row">
+          <div class="col-4">
+            <h2 class="footer-contacts__title title">Как нас найти</h2>
+            <p class="footer-contacts__subtitle">
+              Звонки принимаются с 9.00 до 20.00.
+            </p>
+            <p class="footer-contacts__subtitle">
+              Без выходных!
+            </p>
+            <div class="footer-contacts__icon d-flex flex-wrap align-items-start">
+              <img src="./img/icons/icon17.png" alt="icon" />
+              <div class="footer-contacts__text">
+                <a href="#">
+                  <p class="footer-contacts__desc">г. Москва,</p>
+                  <p class="footer-contacts__desc">
+                    Измайловская пл., 11, 105037
+                  </p>
+                  <p class="footer-contacts__info">Третий этаж, офис 302</p>
+                </a></div>
+            </div>
+            <div class="footer-contacts__icon footer-contacts__icon--tel d-flex flex-wrap align-items-start ">
+              <img src="./img/icons/icon18.png" alt="icon" />
+              <div class="footer-contacts__text d-flex flex-column justify-content-center">
+                <div><a href="tel:+74993676027" class="footer-contacts__desc">
+                    +7(499)367-60-27</a></div>
+                <div><a href="tel:+74993676063" class="footer-contacts__desc">
+                    +7(499)367-60-63</a></div>
+                <div><a href="mailto:info@mkv.ru" class="footer-contacts__link"> info@mkv.ru</a>
+                </div>
+              </div>
+            </div>
+            <form method="GET" action="">
+              <button class="footer-contacts__button">
+                ? Задать интересующие вопросы
+              </button>
+            </form>
+          </div>
+          <div class="col-8"></div>
         </div>
       </div>
-    </footer>
-  </body>
+      <div class="container footer__nav">
+        <div class="row">
+          <div class="col-3">
+            <div class="logo__text logo__text--footer d-flex">
+              <a href="#"><img src="./img/img4.png" alt="лого" /></a>
+              <div>
+                <div class="logo__text logo__text--footer"><a href="#">Мемориальная компания</a></div>
+                <div class="logo__title logo__title--footer"><a class="logo__title logo__title--footer"
+                    href="#">Возрождение</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="banner__nav banner__nav--footer  nav d-flex">
+                <ul class="nav__list nav__list--footer list d-flex ">
+                  <div class="col-3">
+                    <li class="nav__item nav__item--footer ">
+                      <a href="#" class="nav__link nav__link--footer ">Главная</a>
+                    </li>
+                    <li class="nav__item nav__item--footer">
+                      <a href="#" class="nav__link nav__link--footer">Памятники</a>
+                    </li>
+                  </div>
+                  <div class="col-3">
+                    <li class="nav__item nav__item--footer ">
+                      <a href="#" class="nav__link nav__link--footer ">Ограды</a>
+                    </li>
+                    <li class="nav__item nav__item--footer">
+                      <a href="#" class="nav__link nav__link--footer">Цветники</a>
+                    </li>
+                  </div>
+                  <div class="col-3">
+                    <li class="nav__item nav__item--footer ">
+                      <a href="#" class="nav__link nav__link--footer ">Цоколя</a>
+                    </li>
+                    <li class="nav__item nav__item--footer d-flex flex-nowrap">
+                      <a href="#" class="nav__link nav__link--footer">О компании</a>
+                    </li>
+                  </div>
+                  <div class="col-3">
+                    <li class="nav__item nav__item--footer ">
+                      <a href="#" class="nav__link nav__link--footer ">Фото</a>
+                    </li>
+                    <li class="nav__item nav__item--footer">
+                      <a href="#" class="nav__link nav__link--footer">Контакты</a>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="footer__design d-flex align-items-end flex-column">
+              <p class="footer__design-text">Разработка сайта:</p>
+              <img src="./img/logo2.png" alt="logo2">
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="footer__copyright">
+              <p>
+                Все права на материалы, находящиеся на сайте mkv.ru, охраняются в
+                соответствии с законодательством РФ, ккв том числе,об авторском
+                праве и смежных правах
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/jquery.mask.min.js"></script>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/scripts.js"></script>
+  <script src="https://kit.fontawesome.com/0b79355df0.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

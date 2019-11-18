@@ -1,0 +1,105 @@
+.content {
+    padding-top: 96px;
+    text-align: center;
+    padding-bottom: 79px;
+
+    &__title {
+        padding-bottom: 16px;
+    }
+
+    &__text {
+        padding-bottom: 40px;
+    }
+
+    &__name {
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #000000;
+        padding-right: 57px;
+        padding-left: 57px;
+        padding-top: 22px;
+        padding-bottom: 20px;
+    }
+
+    &__button {
+        width: 190px;
+        height: 40px;
+        border: 1px solid #5F82FF;
+        border-radius: 6px;
+        color: #5F82FF;
+        font-size: 15px;
+        background-color: transparent;
+    }
+
+    &__plate {
+        border: 1px solid #E8E8E8;
+        border-radius: 10px;
+        padding-top: 40px;
+        padding-bottom: 29px;
+        margin-bottom: 41px;
+
+    }
+
+    &__desc {
+        font-size: 13px;
+        line-height: 26px;
+        color: #999999;
+        padding-bottom: 9px;
+
+    }
+
+    &__button-more {
+        width: 260px;
+        height: 60px;
+        background: #5F82FF;
+        border-radius: 6px;
+    }
+
+    &__button-link {
+        padding: 15px 60px;
+    }
+
+    &__select {
+        width: 100%;
+        border: none;
+        height: 40px;
+        background-color: #EFEFEF;
+        color: #999999;
+        text-align: center;
+    }
+
+    &__price {
+        padding-top: 29px;
+        padding-bottom: 20px;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #000000;
+
+    }
+}
+
+.content__tab.active {
+    display: block;
+}
+
+.content__tab {
+    display: none;
+}
+
+.content__filtr {
+    display: none;
+}
+
+.content__filtr.active {
+    display: block;
+}
+
+
+
+.ui-state-default .ui-icon.content-icon {
+    background-image: url(../../../img/img9.png);
+}

@@ -8,7 +8,7 @@
     }
 
     &__text {
-        padding-bottom: 40px;
+        padding-bottom: 39px;
     }
 
     &__name {
@@ -81,23 +81,6 @@
 
     }
 }
-
-.content__tab.active {
-    display: block;
-}
-
-.content__tab {
-    display: none;
-}
-
-.content__filtr {
-    display: none;
-}
-
-.content__filtr.active {
-    display: block;
-}
-
 
 
 .ui-state-default .ui-icon.content-icon {

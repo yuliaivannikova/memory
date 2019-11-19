@@ -1,0 +1,27 @@
+.map {
+  width: 854px;
+  height: 551px;
+  overflow: hidden;
+  position: absolute; }
+
+.map__wrap {
+  height: 96%;
+  width: 100%;
+  border: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1; }
+
+.map__mask {
+  height: 100%;
+  width: 100%;
+  background: url(../../../img/map.svg) top center no-repeat;
+  background-size: cover;
+  pointer-events: none;
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+  z-index: 2; }

@@ -24,7 +24,8 @@
     line-height: 34px;
     letter-spacing: 0.02em;
     padding-right: 95px;
-    padding-left: 5px; }
+    padding-left: 5px;
+    padding-bottom: 41px; }
   .services__button {
     font-size: 15px;
     line-height: 26px;
@@ -37,3 +38,9 @@
     background-color: transparent; }
   .services__form {
     margin-top: 10px; }
+  .services__video {
+    position: relative; }
+  .services__img {
+    position: absolute;
+    top: 43%;
+    left: 47%; }

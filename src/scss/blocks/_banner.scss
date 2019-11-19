@@ -1,11 +1,11 @@
 .banner {
-    // background-image: url(../img/bg.png);
-    // background-position: top center;
-    // background-size: cover;
+    background-image: url(../img/bg.png);
+    background-position: top center;
+    background-size: cover;
 
     &__bg {
         padding-top: 38px;
-        // background-color: rgba(18, 18, 18, 0.6);
+        background-color: rgba(18, 18, 18, 0.6);
     }
 
     &__button {

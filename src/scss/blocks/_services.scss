@@ -36,7 +36,7 @@
         letter-spacing: 0.02em;
         padding-right: 95px;
         padding-left: 5px;
-
+        padding-bottom: 41px;
     }
 
     &__button {
@@ -54,5 +54,15 @@
 
     &__form {
         margin-top: 10px;
+    }
+
+    &__video {
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        top: 43%;
+        left: 47%;
     }
 }

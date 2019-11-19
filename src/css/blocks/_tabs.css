@@ -1,0 +1,43 @@
+.tab-content {
+  display: none; }
+
+.tab-content.active {
+  display: block; }
+
+.tab-main--first {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #5F82FF;
+  padding: 18px;
+  padding-right: 30px;
+  padding-left: 29px;
+  border-radius: 6px; }
+
+.tab-main--first.active {
+  background-color: #5F82FF;
+  color: white; }
+
+.tabs-controll--first {
+  border: 1px solid #5F82FF;
+  border-radius: 6px;
+  width: 584px; }
+
+.tab-main--second {
+  font-size: 18px;
+  line-height: 22px;
+  color: #999999;
+  font-weight: 400px;
+  margin-right: 17px;
+  margin-left: 17px;
+  border-bottom-width: 3px;
+  border-bottom-style: dotted;
+  padding-bottom: 5px; }
+
+.tab-main--second.active {
+  color: #000000;
+  border: none; }
+
+.tabs-controll--second {
+  padding-top: 38px;
+  padding-bottom: 69px; }
